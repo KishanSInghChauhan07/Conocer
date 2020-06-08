@@ -9,7 +9,7 @@ import SignUp from './Components/Sign Up/SignUp.Component';
 
 function App() {
   return (
-    <>
+    <div style={{paddingTop:'70px'}}>
     <BrowserRouter>
       <Navbar />
       <Switch>
@@ -19,7 +19,7 @@ function App() {
         <Route exact path='/SignUp' component= { SignUp } />
       </Switch>
     </BrowserRouter>
-    </>
+    </div>
   );
 }
 

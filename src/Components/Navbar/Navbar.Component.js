@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Navbar = () =>{
     return(
         <div>
-            <AppBar position="static">
+            <AppBar position="fixed" className="bg-insta">
                 <Toolbar>
                     <h4 className="pl-4" >
                         Instagram

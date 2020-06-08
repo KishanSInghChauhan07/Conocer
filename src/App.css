@@ -3,3 +3,14 @@
 *{
   font-family: 'Montaga', serif;
 }
+
+.bg-insta {
+  background: #D93025 !important;
+}
+
+.image-container{
+  max-height: 60vh;
+  min-height: 200px;
+  overflow: hidden;
+  background-size: cover;  
+}

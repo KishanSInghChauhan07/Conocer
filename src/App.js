@@ -9,7 +9,7 @@ import SignUp from './Components/Sign Up/SignUp.Component';
 
 function App() {
   return (
-    <div style={{paddingTop:'70px'}}>
+    <div style={{paddingTop:'68px'}}>
     <BrowserRouter>
       <Navbar />
       <Switch>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import {TextField,Card} from '@material-ui/core';
+import {TextField,Card,IconButton} from '@material-ui/core';
+import SendIcon from '@material-ui/icons/Send';
 
 const HomePage = () =>{
     return(
@@ -23,7 +24,12 @@ const HomePage = () =>{
                 <h6 style={{fontSize:'14px',fontWeight:'600',marginLeft:'12px'}}>Kishan Singh</h6>
                 <p style={{fontSize:'14px',fontWeight:'500',position:'relative',left:'7px',bottom:'2px'}}>Need to awake this time</p>
             </div>
-            <TextField label="add a comment" variant="outlined" style={{margin:'0 3% 3% 3%',width:'94%'}}/>  
+            <div className="d-flex">
+                <TextField label="add a comment" variant="outlined" style={{margin:'0 3% 3% 3%',width:'94%'}}/>  
+                <IconButton aria-label="send icon" style={{color:'#D93025',height:'56px',margin:'0 5px 0 -10px'}}>
+                  <SendIcon style={{fontSize:'34px'}}/>
+                </IconButton>
+            </div>
         </Card>
         <Card style={{maxWidth:'35%',margin:'20px auto',minWidth:'330px',borderRadius:'5px'}} className="shadow-sm">
             <div className="d-flex align-items-center" style={{margin:'7px 0'}}>

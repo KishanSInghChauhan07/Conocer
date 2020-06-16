@@ -29,33 +29,33 @@ const Navbar = () =>{
 
     
     return(
-        <div>
-            <AppBar position="fixed" className="bg-insta">
-                <Toolbar>
-                    <h4 className="pl-4" >
-                        Instagram
-                    </h4>
-                    <div  style={{marginLeft:'auto'}}>
-                        <Link to="/SignUp" className='text-white p-4'>SignUp</Link>
-                        <Link to="/SignIn" className='text-white p-4'>SignIn</Link>
-                        <Link to="/Profile" className='text-white p-4'>Profile</Link>
-                        <Link onClick={handleOpen} className='text-white p-4'>Post</Link>
-                        <Modal
-                          className={classes.modal}
-                          open={open}
-                          onClose={handleClose}
-                          closeAfterTransition
-                          BackdropComponent={Backdrop}
-                          BackdropProps={{
-                              timeout: 500,
-                          }}
-                        >
-                          <AddPost in={open}/>
-                        </Modal>
-                    </div>
-                </Toolbar>
-            </AppBar>
-        </div>
+      <div>
+        <AppBar position="fixed" className="bg-insta">
+          <Toolbar>
+            <h4 className="pl-4" >
+                Instagram
+            </h4>
+            <div  style={{marginLeft:'auto'}}>
+              <Link to="/SignUp" className='text-white p-4'>SignUp</Link>
+              <Link to="/SignIn" className='text-white p-4'>SignIn</Link>
+              <Link to="/Profile" className='text-white p-4'>Profile</Link>
+              <Link onClick={handleOpen} className='text-white p-4'>Post</Link>
+              <Modal
+                className={classes.modal}
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                    timeout: 500,
+                }}
+              >
+                <AddPost in={open} handleClose={handleClose}/>
+              </Modal>
+            </div>
+          </Toolbar>
+        </AppBar>
+      </div>
     )
 }
 
